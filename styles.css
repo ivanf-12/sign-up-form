@@ -1,0 +1,159 @@
+:root {
+  --void: #0E0B16;
+  --fuschia: #A239CA;
+  --jewel: #4717F6;
+  --stark: #E7DFDD;
+}
+
+@font-face {
+  font-family: norse-bold;
+  src: url("fonts/Norse-Bold.otf");
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--void);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-image: linear-gradient(rgba(162, 57, 202, 0.45), 
+  rgba(162, 57, 202, 0.45)), url("images/thomas-chan-a3wiRpcBmgY-unsplash.jpg");
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.header-logo {
+  width: 50px;
+  height: auto;
+}
+
+.header-title {
+  color: var(--stark);
+  font-family: norse-bold, sans-serif;
+  font-size: 3rem;
+}
+
+.right-section {
+}
+
+.content {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dummy-container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.dummy-paragraph {
+  max-width: 75ch;
+  color: var(--stark);
+  text-align: center;
+}
+
+.form-container {
+  margin-top: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.left-form, .right-form {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.form-title, label {
+  color: white;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 250px;
+  gap: 5px;
+}
+
+input, button {
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 0px solid;
+  border-radius: 5px;
+}
+
+label, input {
+  font-size: 0.75rem;
+}
+
+input {
+  padding: 10px;
+  height: 30px;
+}
+
+input:active, input:focus {
+  border: 2px solid var(--fuschia);
+}
+
+button {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  padding: 10px 20px;
+  background-color: var(--void);
+  border: 1px solid var(--fuschia);
+  color: var(--fuschia);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+} 
+
+footer p {
+  color: white;
+}
+
+a, a:visited {
+  color: var(--fuschia);
+  text-decoration: none;
+}
