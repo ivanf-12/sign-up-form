@@ -208,7 +208,7 @@ a, a:visited {
 
 @media (min-width: 55em) {
   .dummy-paragraph, .dummy-paragraph > em, .form-title {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .form-container {
@@ -219,16 +219,10 @@ a, a:visited {
   }
 
   .input-container {
-    min-width: min(85%, 300px);
+    width: 250px;
   }
 
-  label {
-    font-size: 1.05rem;
-  }
-}
-
-@media (min-width: 1100px) {
-  input {
+  label, input {
     font-size: 1.05rem;
   }
 }
