@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Form</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   <link rel="stylesheet" href="https://use.typekit.net/phe7dey.css">
 </head>
 <body>
@@ -31,33 +31,40 @@
           <div class="left-form">
             <div class="input-container">
               <label for="first-name">First Name</label>
-              <input type="text" name="first-name" id="first-name">
+              <input type="text" name="first-name" id="first-name" 
+              placeholder="Enter your first name">
             </div>
             <div class="input-container">
               <label for="last-name">Last Name</label>
-              <input type="text" name="last-name" id="last-name">
+              <input type="text" name="last-name" id="last-name" 
+              placeholder="Enter your last name">
             </div>
             <div class="input-container">
               <label for="email">E-mail</label>
-              <input type="email" name="email" id="email">
+              <input type="email" name="email" id="email" 
+              placeholder="username@gmail.com">
             </div>
           </div>
           <div class="right-form">
             <div class="input-container">
               <label for="phone-num">Phone Number</label>
-              <input type="tel" name="phone-num" id="phone-num">
+              <input data-number type="tel" name="phone-num" id="phone-num" 
+              placeholder="10 digits valid phone number">
             </div>
             <div class="input-container">
               <label for="password">Password</label>
-              <input type="password" name="password" id="password">
+              <input data-password type="password" name="password" 
+              id="password">
             </div>
             <div class="input-container">
               <label for="confirm-pw">Confirm Password</label>
-              <input type="password" name="confirm-pw" id="confirm-pw">
+              <input data-confirmPw type="password" name="confirm-pw" 
+              id="confirm-pw">
             </div>
           </div>
         </div>
-        <button class="submit" type="submit">Create Account</button>
+        <button data-submit class="submit" type="submit">
+        Create Account</button>
       </form>
     </div>
     <footer>
