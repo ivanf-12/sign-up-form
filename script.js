@@ -7,6 +7,7 @@ submitButton.addEventListener('click', () => {
   console.log(numberField);
   if(passwordField.value !== confirmPwField.value) {
     confirmPwField.setCustomValidity("password doesn't match!");
+    return;
   }
   else {
     confirmPwField.setCustomValidity("");
