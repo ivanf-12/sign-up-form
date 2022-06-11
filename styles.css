@@ -163,7 +163,7 @@ input:active, input:focus {
   align-items: center;
 } 
 
-.submit:hover {
+.submit:hover, .submit:active {
   background-color: var(--fuschia);
   color: var(--void);
   box-shadow: 0px 0px 10px var(--fuschia);
@@ -224,5 +224,11 @@ a, a:visited {
 
   label, input {
     font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .input-container {
+    width: 300px;
   }
 }
